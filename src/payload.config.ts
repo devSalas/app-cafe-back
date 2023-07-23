@@ -9,7 +9,7 @@ import Menu from './collections/Menu';
 import Special from './collections/Special';
 
 export default buildConfig({
-  serverURL: `${process.env.PAYLOAD_PUBLIC_SERVER_URL}${process.env.PAYLOAD_PUBLIC_PORT}`,
+  serverURL: 'http://localhost:3001',
   admin: {
     user: Users.slug,
   },

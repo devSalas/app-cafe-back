@@ -22,7 +22,7 @@ const start = async () => {
 
   // Add your own express routes here
 
-  app.listen(process.env.PAYLOAD_PUBLIC_PORT);
+  app.listen(process.env.PORT);
 }
 
 start();
