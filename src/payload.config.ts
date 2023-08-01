@@ -12,8 +12,11 @@ export default buildConfig({
   serverURL: `${process.env.PAYLOAD_PUBLIC_SERVER_URL}`,
   admin: {
     user: Users.slug,
+    
   },
-  cors:["http://localhost:3000"],  
+  
+  csrf:["http://localhost:3000/,https://cafe-app-red.vercel.app/"],
+  cors:["http://localhost:3000/,https://cafe-app-red.vercel.app/"],  
   collections: [
     Users,
     Menu,
